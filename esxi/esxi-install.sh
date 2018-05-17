@@ -12,7 +12,7 @@ export PATH=/bin:/sbin:/usr/bin:/usr/sbin
 VER=$(uname -r)
 if [ "$VER" == "6.0.0" ]; then
    echo "Error - ESXi 6.0.0 is not supported!"
-elif [ "$VER" == "6.5.0" ]; then
+elif [ "$VER" == "6.5.0" ] || [ "$VER" == "6.7.0" ]; then
     # Copy patch to local.sh
     echo Installing local.sh
     chmod +x local.sh
